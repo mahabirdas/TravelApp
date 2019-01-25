@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NextSignUp"
+    android:orientation="vertical"
+    android:background="@drawable/signup">
+
+        <TextView
+            android:id="@+id/continue_txt"
+            android:layout_width="176dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/signup_img"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name:"
+            android:textSize="18sp"
+            android:textColor="@color/text_point"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shadow_back"
+            android:elevation="16dp"
+            android:translationZ="2dp"
+            android:stateListAnimator="@null"
+            android:focusableInTouchMode="true"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textSize="18sp"
+            android:textColor="@color/text_point"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shadow_back"
+            android:elevation="16dp"
+            android:focusableInTouchMode="true"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/text_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textSize="18sp"
+            android:textColor="@color/text_point"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txt_input_pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shadow_back"
+            android:elevation="16dp"
+            app:passwordToggleDrawable="@drawable/password_visible_or_not"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/text_point">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_password"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="true"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="20sp"
+                android:background="@null"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/text_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday:"
+            android:textSize="18sp"
+            android:textColor="@color/text_point"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_gen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="18sp"
+            android:textColor="@color/text_point"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/gen_redio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Male"
+                android:layout_margin="5dp"
+                android:buttonTint="@color/text_point"
+                android:clickable="true"/>
+
+            <RadioButton
+                android:id="@+id/btn_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Female"
+                android:layout_margin="5dp"
+                android:buttonTint="@color/text_point"
+                android:clickable="true"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_sign"
+            android:elevation="16dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

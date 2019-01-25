@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HomeTravel</string>
+    <string name="payment">you will receive an email from Travelapp with details about your payment.You can now see you ticket.</string>
+</resources>
